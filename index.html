@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MalobaOS | David Maloba</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1><span class="highlight">M</span>aloba<span class="highlight">OS</span></h1>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <ul class="nav-links">
+        <li><a href="#home"     onclick="closeNav()">Home</a></li>
+        <li><a href="#about"    onclick="closeNav()">About</a></li>
+        <li><a href="#skills"   onclick="closeNav()">Skills</a></li>
+        <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+        <li><a href="#contact"  onclick="closeNav()">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">IT Graduate · Developer · Problem Solver</p>
+      <h2>Hello, I'm <span class="highlight">David Maloba</span></h2>
+      <p class="hero-sub">Final-year IT student at Kibabii University. I build web systems, configure networks, and make machines think.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact"  class="btn-outline">Get In Touch</a>
+      </div>
+      <div class="javis-controls">
+        <button id="chatBtn"><i class="fas fa-robot"></i> Talk to Javis</button>
+        <button id="micBtn" title="Voice input"><i class="fas fa-microphone"></i></button>
+        <button id="clearChat" title="Clear chat"><i class="fas fa-trash"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section-dark">
+    <div class="container">
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a final-year <strong>Information Technology</strong> student at <strong>Kibabii University</strong> (graduating November 2026), passionate about bridging the gap between technology and real-world impact.</p>
+          <p>With hands-on experience as an <strong>IT Support Intern at Calltroix Call Center</strong>, I've diagnosed 15+ hardware/network issues weekly, maintained 99%+ network uptime, and delivered first-line technical support in a fast-paced environment.</p>
+          <p>I love building things — from ML-powered web systems to clean frontends — and I'm always looking for the next problem worth solving.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">99%</span><span class="stat-label">Network Uptime</span></div>
+            <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Issues/Week Resolved</span></div>
+          </div>
+        </div>
+        <div class="about-info">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><strong>Location</strong><span>Nairobi, Kenya</span></div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-university"></i>
+            <div><strong>University</strong><span>Kibabii University</span></div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div><strong>Degree</strong><span>Bachelor of IT (2026)</span></div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-briefcase"></i>
+            <div><strong>Experience</strong><span>IT Support Intern — Calltroix</span></div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <div><strong>Email</strong><span>dmaloba903@gmail.com</span></div>
+          </div>
+          <a href="cv.pdf" download class="btn-primary" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section-mid">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4><i class="fas fa-code"></i> Web Development</h4>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Frontend Dev</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="--w:80%"></div></div>
+        </div>
+
+        <div class="skill-group">
+          <h4><i class="fas fa-network-wired"></i> Networking</h4>
+          <div class="skill-tags">
+            <span>Router/Switch Config</span><span>LAN Setup</span><span>Network Monitoring</span><span>LAN Cabling</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="--w:75%"></div></div>
+        </div>
+
+        <div class="skill-group">
+          <h4><i class="fas fa-tools"></i> IT Support</h4>
+          <div class="skill-tags">
+            <span>Hardware Troubleshooting</span><span>OS Support</span><span>System Maintenance</span><span>User Access Mgmt</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="--w:85%"></div></div>
+        </div>
+
+        <div class="skill-group">
+          <h4><i class="fas fa-brain"></i> AI & Machine Learning</h4>
+          <div class="skill-tags">
+            <span>Python</span><span>TensorFlow</span><span>scikit-learn</span><span>ML Systems</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="--w:65%"></div></div>
+        </div>
+
+        <div class="skill-group">
+          <h4><i class="fas fa-palette"></i> Design & Tools</h4>
+          <div class="skill-tags">
+            <span>Canva</span><span>Adobe Photoshop</span><span>Git</span><span>Windows OS</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="--w:70%"></div></div>
+        </div>
+
+        <div class="skill-group">
+          <h4><i class="fas fa-shield-alt"></i> Security</h4>
+          <div class="skill-tags">
+            <span>System Security</span><span>Access Management</span><span>Software Compliance</span>
+          </div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="--w:60%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section-dark">
+    <div class="container">
+      <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+      <div class="project-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="web">Web</button>
+        <button class="filter-btn" data-category="ai">AI / ML</button>
+        <button class="filter-btn" data-category="systems">Systems</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" data-category="ai"
+          data-title="Student Attachment Matching System"
+          data-icon="🎓"
+          data-desc="A machine learning-powered web platform built as a university capstone project. Matches final-year students with industrial attachment placements based on their skills, location preferences, and industry fit — reducing manual coordination effort significantly."
+          data-tech="Python,scikit-learn,HTML,CSS,JavaScript"
+          data-role="Solo Developer (Capstone 2025)"
+          data-link="https://github.com/group-member/project-2">
+          <div class="card-icon">🎓</div>
+          <h3>Student Attachment Matching System</h3>
+          <p>ML-powered web platform matching students with industrial placements based on skills and location.</p>
+          <div class="card-tags"><span>Python</span><span>ML</span><span>Web</span></div>
+          <button class="card-view-btn">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card" data-category="systems"
+          data-title="Smart Garbage Monitoring System"
+          data-icon="🗑️"
+          data-desc="An automated waste sorting and monitoring system that uses sensors and alarm alerts to detect and categorize waste types — plastic, metal, and paper — helping improve waste management efficiency."
+          data-tech="IoT Sensors,Arduino,Automation"
+          data-role="Developer"
+          data-link="#">
+          <div class="card-icon">🗑️</div>
+          <h3>Smart Garbage Monitoring System</h3>
+          <p>Automated waste sorting with sensor-based alarm detection for plastic, metal, and paper.</p>
+          <div class="card-tags"><span>IoT</span><span>Arduino</span><span>Automation</span></div>
+          <button class="card-view-btn">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card" data-category="web"
+          data-title="Tenant Management System"
+          data-icon="📊"
+          data-desc="A web-based property management application that allows landlords to track tenants, manage lease agreements, and automate monthly reports — reducing administrative overhead for property owners."
+          data-tech="HTML,CSS,JavaScript"
+          data-role="Developer"
+          data-link="#">
+          <div class="card-icon">📊</div>
+          <h3>Tenant Management System</h3>
+          <p>Web app to track tenants, manage leases, and automate property reports.</p>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <button class="card-view-btn">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card" data-category="web"
+          data-title="MalobaOS Portfolio"
+          data-icon="🧠"
+          data-desc="This very portfolio — a custom AI-integrated personal site featuring Javis, an AI assistant powered by voice recognition and text-to-speech. Built with vanilla HTML, CSS, and JavaScript with particle animations and a responsive design."
+          data-tech="HTML,CSS,JavaScript,Web Speech API,particles.js"
+          data-role="Creator & Developer"
+          data-link="#">
+          <div class="card-icon">🧠</div>
+          <h3>MalobaOS Portfolio</h3>
+          <p>AI-integrated portfolio site with voice assistant, particle effects, and responsive design.</p>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>Javis AI</span></div>
+          <button class="card-view-btn">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section-mid">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      <p class="section-sub">Open to graduate IT roles, freelance projects, and collaborations. Feel free to reach out.</p>
+      <div class="contact-grid">
+        <a href="https://wa.me/254768649781" target="_blank" class="contact-card whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+        <a href="mailto:dmaloba903@gmail.com" class="contact-card email">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://instagram.com/tredwey" target="_blank" class="contact-card instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://x.com/yourusername" target="_blank" class="contact-card twitter">
+          <i class="fab fa-x-twitter"></i>
+          <span>X / Twitter</span>
+        </a>
+        <a href="https://tiktok.com/@tredwey" target="_blank" class="contact-card tiktok">
+          <i class="fab fa-tiktok"></i>
+          <span>TikTok</span>
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" class="contact-card github">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 <span class="highlight">David Maloba</span> · Built with MalobaOS</p>
+  </footer>
+
+  <!-- ===== JAVIS CHAT BOX ===== -->
+  <div id="javisBox" class="hidden">
+    <div class="javis-header">
+      <span><i class="fas fa-robot"></i> Javis</span>
+      <button id="closeChat"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="javisChat"></div>
+    <input type="text" id="javisInput" placeholder="Ask Javis something..." />
+  </div>
+
+  <!-- ===== PROJECT MODAL ===== -->
+  <div id="projectModal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <div class="modal-meta">
+        <div><strong>Tech Stack</strong><div class="modal-tags" id="modalTech"></div></div>
+        <div><strong>My Role</strong><p id="modalRole"></p></div>
+      </div>
+      <a id="modalLink" href="#" target="_blank" class="btn-primary modal-btn">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
